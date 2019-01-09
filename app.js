@@ -19,7 +19,14 @@ LCM.onclick = function get() {
         }
         return x;
       }
-     document.getElementById("alcm").innerText = `The LCM of ${a} and ${b} is ${lcm(a, b)}`;
+      
+      if (a == 0) {
+        document.getElementById("alcm").innerText = "Please Enter Numbers!"
+       } else if (b == 0) {
+        document.getElementById("alcm").innerText = "Please Enter Numbers!"
+       } else { 
+           document.getElementById("alcm").innerText = `The LCM of ${a} and ${b} is ${lcm(a, b)}`;
+       }
 }
  
 HCF.onclick = function() {

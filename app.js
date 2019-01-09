@@ -43,7 +43,13 @@ HCF.onclick = function() {
    }
    return a;
  }
- document.getElementById("ahcf").innerText = `The HCF of ${a} and ${b} is ${hcf(a, b)}`;
+ if (a == 0) {
+  document.getElementById("ahcf").innerText = "Please Enter Numbers!"
+ } else if (b == 0) {
+  document.getElementById("ahcf").innerText = "Please Enter Numbers!"
+ } else { 
+     document.getElementById("ahcf").innerText = `The HCF of ${a} and ${b} is ${hcf(a, b)}`;
+    }
 }
 
 

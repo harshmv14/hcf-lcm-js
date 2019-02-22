@@ -2,8 +2,8 @@ var LCM = document.getElementById("lcm");
 var HCF = document.getElementById("hcf");
 
 LCM.onclick = function get() {
-    var a = document.getElementById("first").value;
-    var b = document.getElementById("second").value;
+    var a = Math.round(document.getElementById("first").value);
+    var b = Math.round(document.getElementById("second").value);
 
     function lcm(a, b) {
         return (!a || !b) ? 0 : Math.abs((a * b) / hcf(a, b));
@@ -30,8 +30,8 @@ LCM.onclick = function get() {
 }
 
 HCF.onclick = function () {
-    var a = document.getElementById("first").value;
-    var b = document.getElementById("second").value;
+    var a = Math.round(document.getElementById("first").value);
+    var b = Math.round(document.getElementById("second").value);
 
     function hcf(a, b) {
         a = Math.abs(a);
